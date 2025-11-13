@@ -5,17 +5,21 @@ This repository contains two implementations of real-time edge detection:
 1. **Android Application**: A native Android app using Kotlin, OpenCV, and CameraX
 2. **Web Demo**: A browser-based implementation using OpenCV.js
 
-## Android Application
-
-An Android application that performs real-time edge detection on camera feed using OpenCV and CameraX. The app displays the original camera feed in the bottom half of the screen and the processed edge-detected image in the top half.
-
 <p align="center">
   <img src="real%20time%20edge%20detection%20photo.jpg" alt="Edge Detection Demo" width="600" />
 </p>
 
 <p align="center">
-  <img src="real%20time%20edge%20detection%20video.mp4" alt="Video Demo" width="600" />
+  <video src="real%20time%20edge%20detection%20video.mp4" width="600" controls></video>
 </p>
+
+<p align="center">
+  <video src="web-demo-working.mp4" width="600" controls></video>
+</p>
+
+## Android Application
+
+An Android application that performs real-time edge detection on camera feed using OpenCV and CameraX. The app displays the original camera feed in the bottom half of the screen and the processed edge-detected image in the top half.
 
 ### Android Features
 
@@ -44,7 +48,7 @@ An Android application that performs real-time edge detection on camera feed usi
 
 The edge detection is performed using OpenCV's Canny algorithm in the native C++ code:
 
-```cpp
+```
 // Apply Canny edge detection
 cv::Canny(y_mat, edges_mat, 80, 100);
 
@@ -120,7 +124,7 @@ app/
 
 You can adjust the edge detection sensitivity by modifying the threshold values in [native-lib.cpp](app/src/main/cpp/native-lib.cpp):
 
-```cpp
+```
 cv::Canny(y_mat, edges_mat, 80, 100);  // Lower values = more sensitive detection
 ```
 
