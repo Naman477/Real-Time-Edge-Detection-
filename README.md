@@ -162,6 +162,12 @@ The repository also includes a web-based demo in the [web-demo](web-demo) direct
 - **Responsive Design**: Works on both desktop and mobile devices
 - **Modern UI**: Gradient backgrounds and smooth animations
 
+### Web Demo Video
+
+<p align="center">
+  <video src="web-demo-working.mp4" width="600" controls></video>
+</p>
+
 ## Acknowledgments
 
 - OpenCV community for the computer vision library
