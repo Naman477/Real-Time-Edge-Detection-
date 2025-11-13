@@ -5,14 +5,17 @@ This repository contains two implementations of real-time edge detection:
 1. **Android Application**: A native Android app using Kotlin, OpenCV, and CameraX
 2. **Web Demo**: A browser-based implementation using OpenCV.js
 
-<p align="center">
+<div align="center">
   <img src="real%20time%20edge%20detection%20photo.jpg" alt="Edge Detection Demo" width="600" />
-</p>
+</div>
 
-<p align="center">
-  <a href="real%20time%20edge%20detection%20video.mp4">View Android Demo Video</a> | 
-  <a href="web-demo-working.mp4">View Web Demo Video</a>
-</p>
+<div align="center">
+  <video src="real%20time%20edge%20detection%20video.mp4" width="600" controls></video>
+</div>
+
+<div align="center">
+  <video src="web-demo-working.mp4" width="600" controls></video>
+</div>
 
 ## Android Application
 
