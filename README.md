@@ -10,11 +10,11 @@ This repository contains two implementations of real-time edge detection:
 </div>
 
 <div align="center">
-  <video src="real%20time%20edge%20detection%20video.mp4" width="600" controls></video>
+  <img src="real%20time%20edge%20detection%20video.gif" alt="Android Demo" width="600" />
 </div>
 
 <div align="center">
-  <video src="web-demo-working.mp4" width="600" controls></video>
+  <img src="web-demo-working.gif" alt="Web Demo" width="600" />
 </div>
 
 ## Android Application
