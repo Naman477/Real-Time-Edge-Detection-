@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Edge Detection | Web Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔍</text></svg>">
+</head>
+<body>
+    <header>
+        <h1>Real-Time Edge Detection</h1>
+        <p>Web-based demo using OpenCV.js</p>
+    </header>
+    
+    <main>
+        <div class="instructions">
+            <p>Please allow camera access when prompted. You should see the edge-detected video below.</p>
+            <p><strong>Note:</strong> For best results, ensure you're using a modern browser with camera support.</p>
+        </div>
+        
+        <div class="video-container">
+            <!-- The canvas where the final processed video will be shown -->
+            <canvas id="outputCanvas" class="video-display"></canvas>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn">Start Camera</button>
+            <button id="stopBtn">Stop Camera</button>
+        </div>
+        
+        <div class="info">
+            <h2>About This Demo</h2>
+            <p>This web-based edge detection demo uses OpenCV.js to process your camera feed in real-time. The Canny edge detection algorithm identifies edges in the image by looking for areas of rapid intensity change.</p>
+            
+            <h3>How It Works</h3>
+            <ol>
+                <li>Your browser accesses your camera (with your permission)</li>
+                <li>Each video frame is processed using OpenCV's Canny edge detection</li>
+                <li>The processed image is displayed in real-time</li>
+            </ol>
+        </div>
+    </main>
+    
+    <!-- Hidden video element to stream the raw webcam feed -->
+    <video id="videoInput" playsinline style="display:none;"></video>
+    
+    <!-- Load the OpenCV library for JavaScript -->
+    <script async src="https://docs.opencv.org/4.9.0/opencv.js" onload="onOpenCvReady();"></script>
+    
+    <!-- Our compiled TypeScript code -->
+    <script src="viewer.js"></script>
+</body>
+</html>

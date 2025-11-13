@@ -1,0 +1,25 @@
+{
+  "name": "real-time-edge-detection-web",
+  "version": "1.0.0",
+  "description": "Web-based real-time edge detection using OpenCV.js",
+  "main": "viewer.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "serve": "npx serve .",
+    "start": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "opencv",
+    "edge-detection",
+    "computer-vision",
+    "real-time",
+    "typescript"
+  ],
+  "author": "Edge Detection Team",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.0",
+    "serve": "^14.0.0"
+  }
+}
