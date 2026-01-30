@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "es2015",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "outDir": "./",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "sourceMap": true
+  },
+  "include": [
+    "viewer.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

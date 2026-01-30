@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Edge Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- This canvas will fill the screen and display the processed video -->
+    <canvas id="outputCanvas"></canvas>
+
+    <!-- The overlay container for text -->
+    <div class="overlay-container">
+        <h1>Real-Time Edge Detection</h1>
+        <p id="status-message">Initializing camera...</p>
+    </div>
+
+    <!-- Hidden video element for the raw webcam feed -->
+    <video id="videoInput" playsinline style="display:none;"></video>
+    
+    <!-- Load OpenCV.js first -->
+    <script src="https://docs.opencv.org/4.9.0/opencv.js"></script>
+    
+    <!-- Then load our compiled TypeScript code -->
+    <script src="viewer.js"></script>
+</body>
+</html>
