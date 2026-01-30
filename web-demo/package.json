@@ -4,7 +4,7 @@
   "description": "Web-based real-time edge detection using OpenCV.js",
   "main": "viewer.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npx tsc",
     "watch": "tsc --watch",
     "serve": "npx serve .",
     "start": "npm run build && npm run serve"
